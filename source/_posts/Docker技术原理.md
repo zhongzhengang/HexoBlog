@@ -17,13 +17,12 @@ Docker包括三个基本概念：
 
 Docker 容器通过 Docker 镜像来创建。容器与镜像的关系类似于面向对象编程中的对象与类。
 
-<!-- more -->
 
 Docker 使用**客户端-服务器 (C/S) 架构模式**，使用远程API来管理和创建Docker容器。**TestContainer**就是通过Docker Engine的API来创建和操作容器的。Docker架构模式结构如下图所示：
 
-
-
 ![img](images/Docker的CS架构图.png)
+
+<!-- more -->
 
 下表介绍了架构模式图中涉及到的概念：
 
