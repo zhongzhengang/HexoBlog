@@ -15,7 +15,7 @@ tags:
 
 先来看官方给出的一张容器创建过程图：
 
-<img src="images/docker创建容器流程图-官方.png" alt="img" style="zoom: 50%;" />
+<img src="/images/docker创建容器流程图-官方.png" alt="img" style="zoom: 50%;" />
 
 这张图描述了`docker build`、`docker pull`和`docker run`三个命令在Client、Docker daemon和Regitry之间的交互流程。接下来我们着重分析`dockr run`命令是如何执行的。
 
@@ -33,7 +33,7 @@ docker run -i -t ubuntu /bin/bash
 
 docker创建容器的大致过程可以用下面这幅图来描述：
 
-<img src="images/docker_run大致流程.png" alt="docker_run大致流程" style="zoom: 33%;" />
+<img src="/images/docker_run大致流程.png" alt="docker_run大致流程" style="zoom: 33%;" />
 
 首先你的操作系统上得要有一个docker daemon后台进程在运行，然后当执行上面这行命令时：
 
@@ -53,7 +53,7 @@ step5  将镜像文件加载到容器中（即：裸机上安装好了操作系�
 
 如果在本地没有镜像文件，那么docker回到镜像仓库下载指定得镜像，下载到本地后，再进行装载到容器的操作。这种情况下创建容器的完整流程如下图所示：
 
-<img src="images/docker拉取镜像创建容器的大致流程.png" alt="img" style="zoom:33%;" />
+<img src="/images/docker拉取镜像创建容器的大致流程.png" alt="img" style="zoom:33%;" />
 
 
 
